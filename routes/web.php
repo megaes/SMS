@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
+use Illuminate\Http\Request;
+
+Route::get('/', function ()
+{
     return view('welcome');
+});
+
+Route::post('/addMessage', function(Request $request)
+{
+    App\Message::create(['text' => $request->input('text'), 'countSMS' => $request->input('countSMS')]);
 });
