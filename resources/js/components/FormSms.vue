@@ -1,10 +1,10 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-10">
+            <div class="col-9">
                 <textarea class="form-control" id="txt" maxlength="4096" v-model="text"></textarea>
             </div>
-            <div class="col-2">
+            <div class="col-3">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="customCheck" @click="onTransliterate">
                     <label class="custom-control-label noselect" for="customCheck">Транслитерировать</label>
